@@ -1,0 +1,12 @@
+
+services:
+  flask:
+    container_name: contracts-flask
+    image: parsalakzian/flask:latest
+    restart: always
+    ports:
+      - "5005:5000"
+    environment:
+      - FLASK_ENV=development
+    volumes:
+      - /home/contracts-data:/app  # اینجا باید مسیر دایرکتوری پروژه خود را وارد کنید
