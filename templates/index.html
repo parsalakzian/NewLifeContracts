@@ -158,7 +158,7 @@
         <button id="printButton" class="sign_button" onclick="window.open('/download/{{contract_id}}')"><i class="fas fa-download"></i> دانلود</button>
     {% endif %}
 
-<iframe id="pdfViewer" src="{{ pdf_url }}"></iframe>
+<iframe id="pdfViewer" src="https://drive.google.com/viewerng/viewer?url=https://contracts.nlco.site/download/{{ contract_id }}?pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="500px"></iframe>
 
 {% if not signed %}
 <div id="modal">
